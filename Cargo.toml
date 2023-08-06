@@ -1,0 +1,13 @@
+[package]
+name = "php-pdf"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["lib", "cdylib"]
+
+[dependencies]
+lopdf = { version = "0.31.0", features = ["pom", "pom_parser"] }
+phper = "0.12.0"
